@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MOVIE SEARCH</title>
+    <link rel="stylesheet" href="Agent.css">
+</head>
+<body>
+  <div class="container">
+    <h1>MOVIE SEARCH</h1>
+    <form id="searchForm">
+      <input type="search" placeholder="Search.." id="mySearch" name="search" class="search-input">
+      <button type="submit" id="searchButton" class="search-button">&#128269</button>
+    </form>
+    <div class="button-container">
+      <button onclick="handleSearch()"><b>Send</b></button>
+    </div>
+  </div>
+
+  <div class="movie-info">
+    <div class="div2">
+      <h2>TITLE</h2>
+      <p id="title"></p>
+    </div>
+    <div class="div3">
+      <h2>RELEASED</h2>
+      <p id="released"></p>
+    </div>
+    <div class="div4">
+      <h2>DIRECTOR</h2>
+      <p id="director"></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://lpcdn.lpsnmedia.net/webagent/client-SDK.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
